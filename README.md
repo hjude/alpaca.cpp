@@ -109,13 +109,13 @@ pkg install git
 git clone https://github.com/antimatter15/alpaca.cpp
 cd alpaca.cpp
 pkg install make
+make chat
 ```
 
 Save the `ggml-alpaca-7b-q4.bin` file in the same directory as your `./chat` executable. 
 
 
 ```sh
-make chat
 ./chat
 ```
 
