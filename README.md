@@ -12,12 +12,15 @@ This combines the [LLaMA foundation model](https://github.com/facebookresearch/l
 ## Get started
 
 ```sh
-git clone https://github.com/rupeshs/alpaca.cpp
+git clone https://github.com/antimatter15/alpaca.cpp
 cd alpaca.cpp
 
 make chat
 ./chat
 ```
+
+
+## 7B
 
 You can download the weights for `ggml-alpaca-7b-q4.bin` with BitTorrent `magnet:?xt=urn:btih:5aaceaec63b03e51a98f04fd5c42320b2a033010&dn=ggml-alpaca-7b-q4.bin&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce`
 
@@ -46,10 +49,12 @@ The weights are based on the published fine-tunes from `alpaca-lora`, converted 
 
 - Download and install CMake: <https://cmake.org/download/>
 - Download and install `git`. If you've never used git before, consider a GUI client like <https://desktop.github.com/>
-- Clone this repo using your git client of choice (for GitHub Desktop, go to File -> Clone repository -> From URL and paste `https://github.com/rupeshs/alpaca.cpp` in as the URL)
-- Install Visual Studio 2019 or later with C++ support or install Visual C++ build tools 2019.
+- Clone this repo using your git client of choice (for GitHub Desktop, go to File -> Clone repository -> From URL and paste `https://github.com/antimatter15/alpaca.cpp` in as the URL)
+- Install Visual Studio 2022 or later with C++ support or install Visual C++ build tools 2022.
 - Open a Windows Terminal inside the folder you cloned the repository to
 - Run the following commands one by one:
+
+
 
 ```
 mkdir build
@@ -62,6 +67,17 @@ cmake --build . --config Release
 
 - (You can add other launch options like `--n 8` as preferred onto the same line)
 - You can now type to the AI in the terminal and it will reply. Enjoy!
+
+for 'nmake' '-?' isuue see https://github.com/antimatter15/alpaca.cpp/issues/35#issuecomment-1475209486
+
+
+```
+In this case for installation you should use it in Developer Command Prompt window (Developer Command Prompt for VS 2022), you can find it in C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2022\Visual Studio Tools.
+
+Remove old alpaca.cpp folder
+Reinstall using Developer Command Prompt for VS 2022
+```
+
 
 ## Linux
 Install the build-essentials and cmake.
@@ -76,21 +92,32 @@ cmake --build . --config Release
 ```
 
 
-## Android
+## Android with termux (same as for linux plus several more steps)
 You can easily run `alpaca.cpp` on Android device with [termux](https://play.google.com/store/apps/details?id=com.termux).
-First, obtain the [Android NDK](https://developer.android.com/ndk) and then build with CMake:
-```
-$ mkdir build-android
-$ cd build-android
-$ export NDK=<your_ndk_directory>
-$ cmake -DCMAKE_TOOLCHAIN_FILE=$NDK/build/cmake/android.toolchain.cmake -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-23 -DCMAKE_C_FLAGS=-march=armv8.4a+dotprod ..
-$ make
-```
 
 Install [termux](https://play.google.com/store/apps/details?id=com.termux) on your device and run `termux-setup-storage` to get access to your SD card.
-Finally, copy the `llama` binary and the model files to your device storage. Here is a screenshot of an interactive session running on Pixel 7 Pro phone:
 
-![Alpaca running on Pixel 7 pro](https://raw.githubusercontent.com/rupeshs/alpaca.cpp/linux-android-build-support/pixel7pro-alpaca-7b.png)
+
+```sh
+pkg install git
+git clone https://github.com/antimatter15/alpaca.cpp
+cd alpaca.cpp
+pkg install cmake
+
+make chat
+./chat
+```
+
+
+
+Save the `ggml-alpaca-7b-q4.bin` file in the same directory as your `./chat` executable. 
+
+Here is a screenshot of an interactive session running on Pixel 7 phone:
+
+![Alpaca running on Pixel 7](https://raw.githubusercontent.com/antimatter15/alpaca.cpp/linux-android-build-support/pixel7pro-alpaca-7b.png)
+
+
+
 
 ## 13B
 
