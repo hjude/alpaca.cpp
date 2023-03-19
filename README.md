@@ -106,16 +106,17 @@ pkg install git
 git clone https://github.com/antimatter15/alpaca.cpp
 cd alpaca.cpp
 pkg install cmake
+```
 
+Save the `ggml-alpaca-7b-q4.bin` file in the same directory as your `./chat` executable. 
+
+
+```sh
 make chat
 ./chat
 ```
 
-
-
-Save the `ggml-alpaca-7b-q4.bin` file in the same directory as your `./chat` executable. 
-
-Here is a screenshot of an interactive session running on Pixel 6 phone:
+Here is a screenshot of an interactive session running on Pixel 6 Android 13 phone:
 
 ![Alpaca running on Pixel 6](Screenshot_20230319-091926.jpg)
 
