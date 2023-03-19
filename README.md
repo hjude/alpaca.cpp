@@ -68,7 +68,10 @@ cmake --build . --config Release
 - (You can add other launch options like `--n 8` as preferred onto the same line)
 - You can now type to the AI in the terminal and it will reply. Enjoy!
 
-for 'nmake' '-?' isuue see https://github.com/antimatter15/alpaca.cpp/issues/35#issuecomment-1475209486
+
+## Issues
+
+for 'nmake' '-?' issue see https://github.com/antimatter15/alpaca.cpp/issues/35#issuecomment-1475209486
 
 
 ```
@@ -114,7 +117,7 @@ Save the `ggml-alpaca-7b-q4.bin` file in the same directory as your `./chat` exe
 
 Here is a screenshot of an interactive session running on Pixel 7 phone:
 
-![Alpaca running on Pixel 7](https://raw.githubusercontent.com/antimatter15/alpaca.cpp/linux-android-build-support/pixel7pro-alpaca-7b.png)
+![Alpaca running on Pixel 7](https://raw.githubusercontent.com/rupeshs/alpaca.cpp/linux-android-build-support/pixel7pro-alpaca-7b.png)
 
 
 
