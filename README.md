@@ -57,13 +57,16 @@ The weights are based on the published fine-tunes from `alpaca-lora`, converted 
 
 
 ```
-mkdir build
-cmake -B build .
-cd build
+cmake .
 cmake --build . --config Release
 ```
 - Download the weights via any of the links in "Get started" above, and save the file as `ggml-alpaca-7b-q4.bin` in the main Alpaca directory.
 - In the terminal window, run the commands:
+
+```
+.\Release\chat.exe
+```
+
 
 - (You can add other launch options like `--n 8` as preferred onto the same line)
 - You can now type to the AI in the terminal and it will reply. Enjoy!
