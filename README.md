@@ -108,7 +108,7 @@ Install [termux](https://play.google.com/store/apps/details?id=com.termux) on yo
 pkg install git
 git clone https://github.com/antimatter15/alpaca.cpp
 cd alpaca.cpp
-pkg install cmake
+pkg install make
 ```
 
 Save the `ggml-alpaca-7b-q4.bin` file in the same directory as your `./chat` executable. 
