@@ -128,6 +128,7 @@ cd alpaca.cpp
 
 Here is a screenshot of an interactive session running on Pixel 6 Android 13 phone:
 
+![Alpaca 7B running on Pixel 6](skorost%20raboty.gif)
 ![Alpaca running on Pixel 6](Screenshot_20230319-091926.jpg)
 
 
