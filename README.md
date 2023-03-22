@@ -158,6 +158,10 @@ to use this model add parameter
 ./chat -m ggml-model-q4_0.bin
 ```
 
+
+
+You can actually take all other models from here https://huggingface.co/Pi3141
+
 ## Credit
 
 This combines 
