@@ -147,7 +147,7 @@ Torrent: `magnet:?xt=urn:btih:053b3d54d2e77ff020ebddf51dad681f2a651071&dn=ggml-a
 ## 30B
 
 
-If you have than 32GB and more of RAM (and a beefy CPU), you can use the higher quality 30B alpaca-30B-ggml.bin model. To download the weights, you can use
+If you have than 32GB or more of RAM (and a beefy CPU), you can use the higher quality 30B alpaca-30B-ggml.bin model. To download the weights, you can use
 
 ```
 git clone https://huggingface.co/Pi3141/alpaca-30B-ggml
