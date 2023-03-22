@@ -136,13 +136,26 @@ Here is a screenshot of an interactive session running on Pixel 6 Android 13 pho
 
 ## 13B
 
-TODO: write more docs here (PRs welcome)
 
 Torrent: `magnet:?xt=urn:btih:053b3d54d2e77ff020ebddf51dad681f2a651071&dn=ggml-alpaca-13b-q4.bin&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2810%2Fannounce`
 
 
 ```
 ./chat -m ggml-alpaca-13b-q4.bin
+```
+
+## 30B
+
+
+If you have than 32GB and more of RAM (and a beefy CPU), you can use the higher quality 30B alpaca-30B-ggml.bin model. To download the weights, you can use
+
+```
+git clone https://huggingface.co/Pi3141/alpaca-30B-ggml
+```
+
+to use this model add parameter
+```
+./chat -m ggml-model-q4_0.bin
 ```
 
 ## Credit
